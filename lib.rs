@@ -22,14 +22,6 @@ limitations under the License.
 use syn;
 use quote::quote;
 use proc_macro::TokenStream;
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-        let result = 2 + 2;
-        assert_eq!(result, 4);
-    }
-}
 /// # Unique TryFroms
 /// Add this attribute to [`enum`](<https://doc.rust-lang.org/1.58.1/std/keyword.enum.html>) definitions, and it will implement [`TryFrom`] for each standalone type contained in a variant of that [`enum`](<https://doc.rust-lang.org/1.58.1/std/keyword.enum.html>)/
 /// # Example
